@@ -1,0 +1,51 @@
+{
+  "name": "bamboo",
+  "version": "1.0.0",
+  "description": "Bamboo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaoqi7/EverGame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaoqi7/EverGame/issues"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  },
+  "homepage": "https://github.com/gaoqi7/EverGame#readme",
+  "dependencies": {
+    "axios": "0.18.0",
+    "bcryptjs": "2.4.3",
+    "body-parser": "1.18.3",
+    "cors": "2.8.5",
+    "dotenv": "6.2.0",
+    "express": "4.16.4",
+    "express-jwt": "5.3.1",
+    "express-session": "1.15.6",
+    "if-env": "1.0.4",
+    "jsonwebtoken": "8.4.0",
+    "moment": "^2.24.0",
+    "mongoose": "5.4.9",
+    "passport": "0.4.0",
+    "passport-local": "1.0.0",
+    "path": "0.12.7",
+    "react": "^16.8.2",
+    "react-countdown-now": "^2.1.0",
+    "react-moment": "^0.8.4",
+    "validator": "10.11.0"
+  }
+}

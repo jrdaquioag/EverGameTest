@@ -1,0 +1,102 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@font-face {
+    font-family: 'botw';
+    src: url('botw.woff') format('woff');
+}
+
+
+@-webkit-keyframes textGradient {
+    0%{background-position:0% 64%}
+    50%{background-position:100% 37%}
+    100%{background-position:0% 64%}
+}
+@-moz-keyframes textGradient {
+    0%{background-position:0% 64%}
+    50%{background-position:100% 37%}
+    100%{background-position:0% 64%}
+}
+@keyframes textGradient { 
+    0%{background-position:0% 64%}
+    50%{background-position:100% 37%}
+    100%{background-position:0% 64%}
+}
+
+.ready {
+
+    font-family: botw;
+    font-size: 5vh;
+    background: linear-gradient(289deg, #ffc600, #ffdf29, #ff9b1d );
+    background-size: 200% auto; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    -webkit-animation: textGradient 5s ease infinite;
+    -moz-animation: textGradient 5s ease infinite;
+    animation: textGradient 5s ease infinite;
+}
+
+.listDiv {
+
+    background-color: rgba(0, 0, 0, 0.849);
+    border: rgb(24, 24, 24) solid 1px;
+    border-radius: 5px;
+    padding: 1vw;
+    min-height: 40vh;
+}
+
+.listHolder {
+
+    background-color: white;
+    padding: 2vw;
+    border-radius: 5px;
+    height: 33vh;
+    color: black;
+    margin-bottom: 2vh;
+}
+
+.listHolder img {
+
+    width: 5vw;
+    height: auto;
+    float: left;
+    margin-right: 2vw;
+    margin-top: 2vh;
+}
+
+.listHolder p {
+    color: black;
+    overflow: auto;
+}
+
+.listDescription {
+
+    width: 60vw;
+    height: 13vh;
+}
+
+.countdownTimer {
+
+    color: red;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: rgb(0, 0, 0);
+}
+
+.deleteBtn {
+
+    font-size: 3vh;
+    float: right;
+    bottom: 20vh;
+    position: relative;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}

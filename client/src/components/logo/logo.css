@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'botw';
+    src: url('botw.woff') format('woff');
+}
+
+@-webkit-keyframes textGradient {
+    0%{background-position:0% 64%}
+    50%{background-position:100% 37%}
+    100%{background-position:0% 64%}
+}
+@-moz-keyframes textGradient {
+    0%{background-position:0% 64%}
+    50%{background-position:100% 37%}
+    100%{background-position:0% 64%}
+}
+@keyframes textGradient { 
+    0%{background-position:0% 64%}
+    50%{background-position:100% 37%}
+    100%{background-position:0% 64%}
+} 
+
+.logoHolder {
+
+    text-align: center;
+    margin-top: 6vh;
+    /* width: 100%; */
+}
+
+.logo {
+    font-size: 18vh;
+    font-family: botw;
+    display:inline-block;
+    margin-bottom: 2vh;
+
+    background: linear-gradient(289deg, #ffc600, #fce23f, #ff9b1d );
+    background-size: 200% auto; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    -webkit-animation: textGradient 5s ease infinite;
+    -moz-animation: textGradient 5s ease infinite;
+    animation: textGradient 5s ease infinite;
+}

@@ -1,0 +1,17 @@
+.carousel {
+    /* margin-left: 20vw; */
+    width: 60vw;
+    height: 60vh;
+    display: inline-block
+}
+
+.carouselHolder {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.carousel-inner .carousel-item img {
+    width: 60vw;
+    height: 60vh;
+    border-radius: 6px;
+}

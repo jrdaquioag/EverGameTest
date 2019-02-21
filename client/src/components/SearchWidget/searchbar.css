@@ -1,0 +1,37 @@
+.searchBar {
+
+    width: 70vw;
+    /* margin-left: 1.2vw; */
+}
+
+
+.holderDiv {
+
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.responseDiv {
+
+    border-top: black 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.addBtn {
+
+    margin-top: 3.5vh;
+    font-size: 4vh;
+    transition: .5s;
+}
+
+.addBtn:hover {
+
+    color: red;
+    transition: .5s;
+}
+
+.addBtn:active {
+
+    color: rgb(0, 194, 253);
+}

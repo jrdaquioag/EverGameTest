@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'botw';
+    src: url('botw.woff') format('woff');
+}
+
+.modalHeader {
+
+    background: linear-gradient(289deg, #ffc600, #fce23f, #ff9b1d );
+    color: black;
+}
+
+.modalText {
+
+    color: black;
+    font-size: 6vh;
+    font-family: botw;
+}
+
+  

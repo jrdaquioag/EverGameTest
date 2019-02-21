@@ -1,0 +1,30 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+
+}
+
+.loginBtn {
+
+    margin-right: 5px;
+}
+
+.signUpBtn {
+
+    margin-right: 5px;
+}

@@ -1,0 +1,25 @@
+.gameDiv {
+
+    background: white;
+    padding: 4vh;
+    border-radius: 5px;
+
+}
+
+.gameDetails {
+
+    color: black;
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.timeDiv {
+
+    text-align: center;
+}
+
+.timeDetails {
+
+    font-size: 5vh;
+    line-height: 50vh;
+}
