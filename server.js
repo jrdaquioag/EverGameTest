@@ -22,9 +22,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 app.use(passport.initialize());
 // Serve up static assets
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-// }
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 app.use(session({
   secret: 'countdown-project',
   cookie: { maxAge: 60000 },
@@ -35,7 +35,7 @@ app.use(session({
 // Configure Mongoose
 mongoose.connect(
 
-  "mongodb://heroku_s865995x:qdsqfanqavlmid2g82rprv9te1@ds147125.mlab.com:47125/heroku_s865995x" || process.env.MONGODB_URI || "mongodb://localhost/countdown-project",
+  process.env.MONGODB_URI || "mongodb://localhost/countdown-project",
   // process.env.MONGODB_URI || "mongodb://192.168.56.10/countdown-project",
   {
     useCreateIndex: true,
