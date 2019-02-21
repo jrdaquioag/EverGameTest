@@ -3,6 +3,7 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const mongoose = require('mongoose');
+const path = require('path');
 
 
 const cors = require('cors');
@@ -31,13 +32,13 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "./client/build/index.html"));
   });
 }
-
 else {
   app.use(express.static(path.join(__dirname, '/client/public')));
   app.get("/*", function(req, res) {
     res.sendFile(path.join(__dirname, "./client/public/index.html"));
   });
 }
+
 app.use(session({
   secret: 'countdown-project',
   cookie: { maxAge: 60000 },
