@@ -33,7 +33,11 @@ class home extends Component {
 
   getPopularList = () => {
     API.getPopularList()
-      .then(response => this.setState({ popularList: response.data }))
+      .then(response => {
+        console.log(response); 
+        this.setState({ popularList: response.data })
+      }
+        )
       .then(() => console.log(this.state.popularList))
       .catch(err => console.log(err))
   }
