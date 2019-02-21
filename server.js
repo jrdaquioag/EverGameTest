@@ -35,7 +35,7 @@ app.use(session({
 // Configure Mongoose
 mongoose.connect(
 
-  process.env.MONGODB_URI || "mongodb://localhost/countdown-project",
+  "mongodb://heroku_s865995x:qdsqfanqavlmid2g82rprv9te1@ds147125.mlab.com:47125/heroku_s865995x" || process.env.MONGODB_URI || "mongodb://localhost/countdown-project",
   // process.env.MONGODB_URI || "mongodb://192.168.56.10/countdown-project",
   {
     useCreateIndex: true,
