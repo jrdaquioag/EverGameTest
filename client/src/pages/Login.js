@@ -5,7 +5,8 @@ import SignUpContainer from '../components/loginComponents/containers/SignUpCont
 import LoginContainer from '../components/loginComponents/containers/LoginContainer';
 import Auth from '../util/Auth';
 import './App.css';
-import API from '../util/API'
+import API from '../util/API';
+import history from '../util/history'
 
 
 
@@ -57,6 +58,8 @@ class Login extends Component {
     handleLogout() {
         this.setState({ authenticated: false });
         Auth.deauthenticateUser();
+        history.push('/home');
+        window.location.reload(true);
         this.props.handleLogout();
     }
 

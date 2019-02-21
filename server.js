@@ -3,7 +3,6 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const mongoose = require('mongoose');
-const path = require('path');
 
 
 const cors = require('cors');
@@ -23,18 +22,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 app.use(passport.initialize());
 // Serve up static assets
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-// }
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-// else {
-//   app.use(express.static(path.join(__dirname, '/client/public')));
-//   app.get("/*", function(req, res) {
-//     res.sendFile(path.join(__dirname, "./client/public/index.html"));
-//   });
-// }
+
 // let root = path.join(__dirname, 'client', 'build');
 // app.use(express.static(root));
 // app.use(function(req, res, next) {
